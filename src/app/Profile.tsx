@@ -12,14 +12,42 @@ export function Profile() {
     <div className="w-80 h-80 bg-white rounded-lg overflow-hidden text-black  flex flex-col gap-12">
       <Image src={card} alt={""} />
 
-      <div className=" w-full  fixed  ">
+      <div className=" w-[100px]  fixed  ">
         {" "}
+        
+        <Image
+          src={top}
+          alt={""}
+          className="   rounded-full mt-16 ml-[100px]"
+        />
+      </div>
+      <div className=" w-[100px]  fixed  ">
+        {" "}
+        
+        <Image
+          src={bottom}
+          alt={""}
+          className="   rounded-full mt-16 ml-[100px]"
+        />
+      </div>
+      <div className=" w-32  fixed  ">
+        {" "}
+        
         <Image
           src={avtar}
           alt={""}
-          className="bg-green-300 p-2  rounded-full mt-20 ml-28"
+          className="   rounded-full mt-[65px] ml-[102px]"
         />
       </div>
+      {/* <div className=" w-full  fixed  ">
+        {" "}
+        
+        <Image
+          src={avtar}
+          alt={""}
+          className=" p-2  rounded-full mt-20 ml-28"
+        />
+      </div> */}
       <div className="flex flex-col  w-full  justify-between  gap-4">
         <div className="flex flex-col gap-2 ">
           <p className=" w-full text-center">
