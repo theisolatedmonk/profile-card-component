@@ -10,7 +10,7 @@ import {Profile} from "./Profile";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
+    <main className="flex min-h-screen flex-col items-center justify-between p-24 bg-[hsl(185,75%,39%)] font-Rubik">
       <div className=""> 
 
 

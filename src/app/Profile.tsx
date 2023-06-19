@@ -9,7 +9,7 @@ import { type } from "os";
 
 export function Profile() {
   return (
-    <div className="w-80 h-80 bg-white rounded-lg overflow-hidden text-black  flex flex-col gap-12">
+    <div className="w-80 h-[340px] bg-white rounded-lg overflow-hidden text-black  flex flex-col gap-12 ">
       <Image src={card} alt={""} />
 
       <div className=" w-[100px]  fixed  ">
@@ -48,15 +48,15 @@ export function Profile() {
           className=" p-2  rounded-full mt-20 ml-28"
         />
       </div> */}
-      <div className="flex flex-col  w-full  justify-between  gap-4">
-        <div className="flex flex-col gap-2 ">
-          <p className=" w-full text-center">
-            Victor Crest <span>26</span>
+      <div className="flex flex-col  w-full  justify-between  gap-5 p=">
+        <div className="flex flex-col gap-1 ">
+          <p className=" w-full text-center text-[hsl(229,23%,23%)] font-bold">
+            Victor Crest <span className="text-[hsl(227,10%,46%)] font-normal ">26</span>
           </p>
-          <p className="w-full text-center">London</p>
-          <hr />
+          <p className="w-full text-center text-[hsl(227,10%,46%)] font-normal ">London</p>
+        
         </div>
-
+        <hr />
         <div className="flex">
           <Follower count={80} category={"Followers"} />
           <Follower count={80} category={"Likes"} />
@@ -77,8 +77,8 @@ type FollowersType = {
 export function Follower(props: FollowersType) {
   return (
     <div className="flex flex-col text-black justify-between w-full items-center">
-      <p className="">{props.count}K</p>
-      <p className="">{props.category} </p>
+      <p className=" text-[hsl(229,23%,23%)] font-bold">{props.count}K</p>
+      <p className="text-[hsl(227,10%,46%)] font-normal text-sm">{props.category} </p>
     </div>
   );
 }
